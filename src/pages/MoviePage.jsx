@@ -27,7 +27,7 @@ function MoviePage() {
     }, []);
 
     const handleEnterKey = (event) => {
-        if(event.key === "Enter"){
+        if (event.key === "Enter") {
             getMovies()
         }
     };
