@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const apiUrl = import.meta.env.VITE_API_URL;
 
 function MovieCard({ movie }) {
@@ -12,7 +14,7 @@ function MovieCard({ movie }) {
                     <h5 className="card-title">{movie.title}</h5>
                     <h6 className="card-title">{movie.director}</h6>
                     <p className="card-text">{movie.abstract}</p>
-                    <a href="#" className="btn btn-primary">Dettagli</a>
+                    <Link to={`/movies/${movie.slug}`} className="btn btn-primary">Dettagli</Link>
                 </div>
             </div>
 
