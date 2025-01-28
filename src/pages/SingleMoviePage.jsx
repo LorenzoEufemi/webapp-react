@@ -37,7 +37,7 @@ function SingleMoviePage() {
 
                 // Azzeriamo i campi del form
                 setFormData(initialValues);
-                // Se il salvataggio della review è andata a buon fine richiediamo i dati aggiornati del libro dal server
+                // Richiedo i dati del libro aggiornati
                 getMovie();
             });
     };
