@@ -2,7 +2,7 @@ import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const CreateMoviePage = () => {
+function CreateMoviePage () {
     const apiUrl = import.meta.env.VITE_API_URL;
 
   const defalutForm = {
