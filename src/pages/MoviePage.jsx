@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import MovieCard from "../components/MovieCard";
 import { useState } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 function MoviePage() {
     const [movies, setMovies] = useState([]);
@@ -37,7 +37,10 @@ function MoviePage() {
             <section className="mt-4 mb-5">
                 <h1>Una vasta selezione di film tutti in 4k</h1>
                 <p>Seleziona il fim che più ti piace!</p>
-                <button className="btn btn-primary mb-3 " onClick={() => navigate(-1)}>indietro</button>
+                <div className="d-flex m" >
+                    <button className="btn btn-primary  " onClick={() => navigate(-1)}>indietro</button>
+                    <Link to="/movies/create" className="btn btn-success ms-3">Aggiungi un nuovo film</Link>
+                </div>
             </section>
             <section>
                 <h2>I nostri film:</h2>

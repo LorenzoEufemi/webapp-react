@@ -3,6 +3,7 @@ import AppLayout from "./layouts/AppLayout";
 import HomePage from "./pages/HomePage";
 import MoviePage from "./pages/MoviePage";
 import SingleMoviePage from "./pages/SingleMoviePage";
+import CreateMoviePage from "./pages/CreateMoviePage";
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
             <Route path="/movies">
               <Route index element={<MoviePage />} />
               <Route path=":slug" element={<SingleMoviePage />} />
+              <Route path="create" element={ <CreateMoviePage />} />
             </Route>
           </Route>
         </Routes>
